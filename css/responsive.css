@@ -1,0 +1,87 @@
+@media screen and (min-width: 480px){
+	/* ***********************
+			TWO COLUMN LAYOUT
+	**************************/
+	#primary{
+		width:50%;
+		float:left;
+	}
+	#secondary{
+		width: 40%;
+		float:right;
+	}
+	/* ***********************
+			PAGE: PORTFOLIO
+	**************************/
+	#gallery li{
+		width: 28.3333%
+	}
+	#gallery li:nth-child(4n){
+		clear:left;
+	}
+	/* ***********************
+		PAGE: ABOUT
+	**************************/
+	.profile-photo{
+		float:left;
+		margin: 0 5% 80px 0;
+	}
+}
+/*480px is common size for smartphones in landscape mode. Will apply to all screen sizes from 480px and larger*/
+/*nth child moves image that's in the way*/
+
+	
+
+@media screen and (min-width: 660px){
+	
+	/* ***********************
+				HEADER
+	**************************/
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+	}
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+	}
+
+	header {
+		border-bottom: 5px solid #599a68;
+		margin-bottom: 60px;
+	}
+
+}
+
+/*/@media screen and (min-width: 480px){
+	body{
+		background:navy;
+	}
+}*/
+/*add body background color for testing purposes*/
+/*anything beyond 660px will get darkgreen*/
+/*CSS Selectors
+
+:nth-child(An+B) - The nth-child pseudo-class matches A(n)+B-1 siblings in the document tree. The A value that precedes n is required. By itself, this will match every "nth" element in a group. Both A and B must be integers.
+Code Correction
+
+In this video, the selector :nth-child(4n) is used to correct a responsive issue on every 4th item. In other words, this will select the 4th item, 8th item, 12th item, and so on. This fixes the specific problem in the video, but if more gallery items are added beyond the 5 that are present in this project, the design will start to break again. That's because there are 3 items in each row, and every 4th item could appear at the beginning, middle, or end of a row.
+
+Instead, we want to select the first item in each row. A more robust solution is to use the selector :nth-child(3n + 1) instead. This will select every 3rd item plus 1. In other words, this will select the 4th item, 7th item, 10th item, and so on.*/
+/*to make 3 columns in wellsportfolio.html figure out margins 2.5 on either side of page and and factor three images (1 image p/column) e2.5 + 2.5 = 5 x 3 = 15. Each image is 100%. 100%-15%=85%. 85/3=28.3333333333 (for three columns)

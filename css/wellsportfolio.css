@@ -1,0 +1,354 @@
+ /************************
+	GENERAL
+***************************/
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper{
+	max-width: 940px;
+	margin: 0 auto;
+	padding:0 5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+/*images should be set to max-width 100% bc 
+they will fill their parent element by 100%*/
+h3{
+	margin: 0 0 1em 0;
+}
+/* ***********************
+	HEADING
+**************************/
+header{
+	float:left;
+	margin: 0 0 30px 0;
+	padding:5px 0 0 0;
+	width: 100%;
+}
+#logo{
+	text-align: center;
+	margin: 0;
+}
+h1{
+	font-family: 'Changa One', sans-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+h2{
+	font-size: 0.75em;
+	font-weight: normal;
+	margin:-5px 0 0;
+}
+/*-5px is top 0 left and right 0 bottom
+-5 makes elements be tighter together*/
+
+/* ***********************
+	NAVIGATION
+**************************/
+
+nav{
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul{
+	list-style: none;
+	margin:0 10px;
+	padding:0;
+}
+
+nav li{
+	display:inline-block;
+}
+/*display:inline-block; allows list items to appear horizontally*/
+nav a{
+	font-weight: 800;
+	padding:15px 10px;
+}
+/*nav a styling gives space in btwn portfolio about contact*/
+/* ***********************
+	FOOTER
+**************************/
+
+footer{
+	font-size: 0.75em;
+	text-align: center;
+	clear:both;
+	padding-top: 50px;
+	color: #ccc;
+}
+
+.social-icon{
+	width:20px;
+	height: 20px;
+	margin:0 5px;
+}
+/* ***********************
+	PAGE: PORTFOLIO;
+**************************/
+#gallery{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#gallery li{
+	float:left;
+	width: 45%;
+	margin:2.5%;
+	background-color: #f5f5f5;
+	color:#bdc3c7;
+}
+/*img takes up 45% of total width of page, float: images 
+float next to eachother*/
+/*list-style:none; removes bullet pts from unordered list items*/
+/*45% x 2 = 90%, 2.5 on either side of each pic x 2 =10%->100%*/
+
+/* ***********************
+	PAGE: PORTFOLIO;
+**************************/
+
+.profile-photo{
+	display:block;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 100%;
+}
+/*by default images display inline, margin auto centers 
+image on pg, border-radius:100% becomes a circle, 30px is 
+for bottom margin*/
+
+/* ***********************
+	PAGE: CONTACT;
+**************************/
+.contact-info{
+	list-style: none;
+	padding:0;
+	margin:0;
+	font-size:0.9em;
+}
+/*0.9em is slightly smaller than default
+list-style:none takes away bullet points*/
+.contact-info a{
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+.contact-info li.phone a{
+	background-image: url('../img/phone.png');
+
+}
+.contact-info li.mail a{
+	background-image: url('../img/mail.png');
+
+}
+.contact-info li.twitter a{
+	background-image: url('../img/twitter.png');
+
+}
+/*list item with class phone has no space in btwn dot li and phone. add a anchor element for phone number. put background img behind phone number with url('../img/phone.png'). '' holds image in place and .. takes you out of the directory you're in and back to the route folder/main folder and then to folder you select*/
+/*background-image - Accepts an image path that applies the file to the background of an element.
+background-size - Sets the size of background images.
+background-repeat - Sets whether or not a background image should be repeated. By default, backgrounds will repeat.*/
+/*display: block will give space for each a element*/
+/*30px for padding bc that's where images will go, on left. */
+/*margin 10px gives space below text*/
+
+/*Cross-Browser - The idea of a website or app working on most popular browsers. Typically during the development of a website, cross-browser testing is conducted to help create a consistent experience regardless of the user's choice of web browser.
+
+Resources:
+The W3C Markup Validation Service-validator.w3.org for html
+The W3C CSS Validation Service-jigsaw.w3.org/css-validator
+BrowserStack - Cross Browser Testing Tool-browserstack.com takes a screenshot and does cross browser testing. It's a paid service but you can try the free trial. Test as a public url. Copy your url and select browsers you wnat to test on. Click on screenshots and paste your url
+Treehouse Blog: 3 Simple Design Tests to Improve Your Aesthetics*/
+
+/*to take a screenshot: command shift 4 and space bar. then open in an image editing program. hit command o in open dialogue box.*/
+
+/*1)when testing, set saturation to 0 to see images in black and white (gray scale) to make sure the contrast btwn values is good throughout and will help insure is good to people who are color blind*/
+ /*2)turn page upside down (flip vertical) to make sure that everything still looks balanced and it's symmetrical*/
+/*3)blur page by going to radius and adding pixels, this helps you look at color saturation, is arrangement of darker and lighter good?*/
+ /*4)add a small amt. of blur to see if it's legible for someone who has sight problems*/
+ /*5)test code by using wc3 validation services. copy your html file and paste it in the validator page*/
+/* ***********************
+	COLORS
+**************************/
+
+/* site body */
+body{
+	background-color: #fff;
+	color:#999;
+}
+
+/* green header */
+header{
+	background: #6ab47b;
+	border-color: #599a68;
+}
+
+/* nav background on mobile devices */
+nav{
+	background:#599a68;
+}
+/* logo text */
+
+h1, h2 {
+	color: #fff;
+}
+
+/*links*/
+a {
+	color: #6ab47b;
+}
+
+
+
+/* nav link */
+nav a, nav a:visited {
+	color:#fff;
+}
+/* selected nav link */
+nav a.selected, nav a:hover {
+	color:#32673f;
+}
+/*http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design*/
+/*it's best to start out with mobile first approach to web design and then design for tablets, desktops, etc. simple to complex design*/
+/*use css rule called media query to create responsive web design for fluid layout*/
+/*responsive web design-3 techniques:1)create fluid images->img{max width:100%;} 2)create fluid grids->use percentages to define width of elements rather than pixels. percentages are relative units that change width based on relative width to parent container. Pixels are fixed units which won't adjust to width of browser 3)css rule called media query-allows us to change layout of page elements based on width of page*/
+/*max-width:100% creates fluid images */
+/*Vocabulary*/
+
+/*Breakpoints - The specific screen widths where a responsive layout "breaks" and needs to change in order to accommodate the screen. Need to determine breakpoint first and then you can add in media queries*/
+
+/*CSS Syntax
+@media - Media queries use the @media CSS rule to define conditions of the browser medium. In other words, it allows for CSS styling to only be included if certain conditions are met, such as a specific browser width.
+*/
+/************************************************************/
+/*After responsive design check:
+1)purchase a domain name->select a domain name using a domain registrar:   ->godaddy.com or namecheap.com select a domain name like wells.com A domain name represents an IP address(internet protocol) which is a set of numbers assigned to a location on a network.
+
+2)purchase a server ->use shared hosting 
+ bluehost.com 
+ mediatemple.net
+ dreamhost.com(choose this first!)
+
+ sign up and then click on dns hosting (DNS - The Domain Name System (DNS) is a global routing system for IP addresses on the Internet.)
+ copy the NS addresses to your clipboard
+ http://webhostingforstudents.com/
+ click on domain name and then manage
+ change nameservers click on manage and then select custom
+ paste the ns addresses from the clipboard here. save changes 
+
+ 3)Upload files
+ After purchasing a domain and pointing it to a web host, the last step is to upload files. This can be done using special FTP software.
+ SFTP - SSH File Transfer Protocol (also known as Secure File Transfer Protocol) is a network protocol that allows for the transfer of files to a web server.
+ https://cyberduck.io/
+
+ download mac version of cyberduck. drag download to applications. Open it once it's been installed
+ click on open connection
+ then SFTP (ssh file transfer protocol)
+ then go back to dreamhost to set it up
+ on dreamhost->create a new user under users then manage users then add a new user choose SFTP for type of user acct then pick a username must be globally unique that no one else has click manage users to see if it's gone through don't click refresh as it restarts the process then assign user to the domain name go to Domains then manage domains then click on edit then Users, Files, and Paths select your user name that you created select change settings click on Manage Domains again to see if it went through. Go back to cyberduck. On server, type name of domain make your folder a zipfile open and drag files to your domain website folder should see a transfers then website should be uploaded */
+
+/***********************************/
+/* Next, Debug->Use Google Chrome Developer Tools*/
+
+/*3 Ways to Open Dev Tools*/
+/*
+1)
+CTRL + Shift + i (Windows)
+CMD + Option + i (Mac)*/
+/*2)
+ click on any element and then choose inspect*/
+ /*3)
+ go to menu in chrome->more tools->developer tools*/
+
+/*Common HTML errors
+-closing an element
+-closing a tag
+-misnaming a tag
+-close quotes on attributes
+-improperly nesting elements
+-not including <!DOCTYPE html>
+-getting class and id mixed up 
+(class: 
+can apply to multiple elements. Can use multiple classes on same element)
+class="center" in html     .center in css
+(id:
+(html) #(css)->id="para1" in html   #para1 in css:
+each element can only have one id
+each page can have only one element with that id)
+*/
+/*Common CSS errors
+similar to HTML
+-closing a curly brace
+-mistyping a selector
+-forgetting to use a semi-colon at end of declaration
+-getting id and class mixed up
+-selector isn't selecting what you meant it to select
+-might not have a selector that's specific enough
+-css positioning with margins, padding, border, heights, floats, etc.
+if having trouble placing elements on a page properly: float, clear, position properties good to investigate. Read http://www.w3.org/TR/CSS21/visuren.html*/
+
+ /*https://teamtreehouse.com/library/css-layout-techniques*/
+
+ /*Places to learn new things about the web and become more involved with industry
+ Resources
+
+Treehouse Forum - Get help with code challenges, projects, and more
+https://teamtreehouse.com/community
+
+W3C - Standards group for web languages
+http://www.w3.org/
+
+Treehouse Blog - The official blog for Treehouse
+http://blog.teamtreehouse.com/
+
+CSS-Tricks - A blog about CSS
+https://css-tricks.com/
+
+Web Community Twitter List - List of important web industry leaders to follow on Twitter.
+https://twitter.com/nickrp/lists/web-community
+
+GitHub - Share your code with Git.
+https://github.com/
+
+CodePen - Share small HTML, CSS, and JavaScript projects
+http://codepen.io/
+
+Dribbble - Share shots of your design work
+https://dribbble.com/*/
+
+/* to make contact forms,, social networks ecommerce stores...need to learn back-end programming languages like Ruby on Rails and PHP*/
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
